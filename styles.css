@@ -17,48 +17,65 @@ h2 {
 h3 {
 	font-family: Copperplate, "Copperplate Gothic";
 	font-size: 1em;
-	color:black;
+	color:grey;
 }
 h4{
 	font-family: Copperplate, "Copperplate Gothic";
 	font-size: 2em;
-	color:black;
+	color:grey;
 	text-decoration: underline;
 	text-align: center;
 }
-.color-background {
-    background-color: black;
-}
+
 body {
     background-color: black;
 	margin:10px;
+    padding-left: 200px; /* Add padding on the left equal to sidebar width */
     /* other styles for body */
 }
-/*Styles for the header tag*/
-header {
-    border: 5px solid blue; /* Example: 2px solid black border */
-    padding: 0px; /* Optional: for some spacing inside the border */
-    margin: 0px; /* Optional: for spacing outside the border */
+
+
+
+
+
+/* the header */
+
+.main-content-header{
+	background-color: red;
+	Border: 5px solid black;
+   padding: 20px;
+   flex: 2;
+   max-width:73.05%;
 }
+
+
+/* Updated sidebar styling for fixed position */
+.sidebar {
+    position: fixed;
+    top:0;
+    left: 0;
+    
+    height: calc(100% - 60px); /* Adjust height to take up the remaining height below the header */
+    overflow-y: auto; /* Allows scrolling within the sidebar */
+    z-index: 500; /* Lower than header but above other content */
+}
+
+
+
 
 header h1 {
 	text-align: center;
 	letter-spacing: 5px;
-	text-shadow: 2px 2px 5px #7300e6;
+	
 	font-family: Garamond;
 	margin: 0;
-	background-color: #0080ff;
-	border-top: 5px solid black;
-	border-right: 5px solid black;
-	border-left: 5px solid black;
+	color: grey;
+	
 	
 }
 
 
 /* Style for the nav tag*/
-nav {
-	border: 5px solid black;
-}
 
 ul {
     display: block;
@@ -71,16 +88,19 @@ ul {
 }
 
 nav ul {
-	background-color: #0080ff;
+	background-color: red;
 	line-height: 3em;
 	font-size: 1em;
 	text-indent: 5px;
 	border-radius: 0px;
 }
 nav ul li a {
-	color: black;
+	
 	font-weight: bold;
 	text-decoration: underline;
+}
+nav ul li color a {
+	Background-color: #FE4846;
 }
 
 /* Style for the footer */
@@ -101,8 +121,8 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #0080ff;
+    width: 210px;
+    
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -110,7 +130,7 @@ footer {
 
 .sidebar ul li a {
     display: block;
-    color: #000;
+    color: grey;
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -119,6 +139,7 @@ footer {
     background-color: #00ffc3;
     color: black;
 }
+
 
 /* Dropdown menu */
 .dropdown {
@@ -153,22 +174,28 @@ footer {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .sidebar {
     flex: 1; /* Assigns 1 part of the space to the sidebar */
-    max-width: 200px; /* Limits the width of the sidebar */
+    width: 20%; /* Limits the width of the sidebar */
 }
 
 
 
 
 .contact-info {
-    background-color: #0080ff; /* light blue  background */
-    border: 5px solid blue; /* blue border */
-    padding: 20px;
-    
+    position: fixed; /* Keeps the contact info fixed */
+    top: 0; /* Aligns the top of the block with the top of the viewport */
+    right: 0; /* Aligns the right of the block with the right of the viewport */
+    width: 16%; /* Adjust width as needed */
+    height: 100%; /* Takes full height of the viewport */
+    background-color: red; /* Background color */
+   
+    padding: 20px; /* Padding inside the container */
+    z-index: 500; /* Ensures it is visible above other content but below the header */
+    overflow-y: auto; /* Allows scrolling within the block if content overflows */
 }
 
 .contact-info h3 {
@@ -177,27 +204,28 @@ footer {
 
 .contact-info a {
     display: block;
-    color: black; /* color for links */
+    color: grey; /* color for links */
     text-decoration: none; /* No underline */
     padding: 5px 0; /* Padding for each link */
 }
 
 .contact-info a:hover {
     text-decoration: underline; /* Underline on hover */
-	color: white;
+	color: black;
 }
 
 
 .main-content {
-   background-color: #0080ff; /* light blue  background */
-   border: 5px solid blue; /* blue border */
+   background-color: white; /* light blue  background */
+   Border: 5px solid black;
    padding: 20px;
    flex: 2;
+   max-width:73.05%
 }
 
 .main-content a {
     display: block;
-    color: black; /* color for links */
+    color: grey; /* color for links */
     text-decoration: none; /* No underline */
     padding: 5px 0; /* Padding for each link */
 	
@@ -206,7 +234,7 @@ footer {
 
 .main-content a:hover {
    /* Underline on hover */
-	color: white;
+	color: black;
 }
 
 
@@ -226,8 +254,8 @@ footer {
     position: absolute;
     z-index: 1;
     top: 100%;
-    left: 50%;
-    margin-left: -60px;
+    
+    
 }
 
 .icon-tooltip:hover .tooltip-text {
