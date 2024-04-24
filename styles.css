@@ -170,7 +170,12 @@ footer {
 }
 
 
-
+.center {
+  display: block;
+  margin-left: 15%;
+  margin-right: auto;
+  width: 50%;
+}
 
 .container {
     display: flex;
@@ -180,6 +185,7 @@ footer {
 .sidebar {
     flex: 1; /* Assigns 1 part of the space to the sidebar */
     width: 20%; /* Limits the width of the sidebar */
+	
 }
 
 
