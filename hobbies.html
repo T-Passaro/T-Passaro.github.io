@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!--Developer: Thomas Passaro Start Date: date 4/17/2024 --> 
-
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title>T-Passaro Hobbies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	
-	<link rel="stylesheet" type="text/css" href="Pass-mobile.css" media="screen and (max-width:1050px)" />
-	
+	<link rel="stylesheet" type="text/css" href="Pass-mobile.css" media="screen and (max-width:1050px)">
+	<script src="javascript.js"></script>
   </head> 
   <body>
   
@@ -21,15 +21,15 @@
 	<div class="container">
 		<nav class="sidebar">
 			<p></p>
-			<img src="Logo.png"  width="175" height="115" class="center">
+			<img alt="T-Passsaro logo" src="Logo.png"  width="175" height="115" class="center">
 			<p></p>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
 				<li><a href="coding-projects.html">Coding Projects</a></li>
-				<li class="dropdown">
-					<color><a href="hobbies.html">Hobbies</a></color>
-						<div class="dropdown-content">
+				<li class="dropdown active-nav">
+					<a href="hobbies.html" id="hobbies-link">Hobbies</a>
+						<div class="dropdown-content visible" id="dropdown-content">
 							<a href="chess.html">Chess</a>
 							<a href="building-projects.html">Building Projects</a>
 						</div>
@@ -39,6 +39,16 @@
 		
 		<main class="main-content">
 		
+			<h4><a href="chess.html">Chess</a></h4>
+			<h3>I started playing chess in the Summer of 2023. 
+			I am a causal player and I am enjoying learning more and more strategy.
+			<a href="chess.html">More...</a> </h3>
+			
+			
+			<h4><a href="building-projects.html">Building Projects</a></h4>
+			<h3>I love building things. I use various different materials that range from woodworking, 
+			ceramics, metalworking, and more.
+			<a href="building-projects.html">More...</a> </h3>
 			<footer> 
 		Designed & Built by Thomas J. Passaro
 		</footer> 
