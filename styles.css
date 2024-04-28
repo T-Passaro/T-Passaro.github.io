@@ -54,7 +54,7 @@ body {
     position: fixed;
     top:0;
     left: 0;
-    
+    width: 20%;
     height: calc(100% - 60px); /* Adjust height to take up the remaining height below the header */
     overflow-y: auto; /* Allows scrolling within the sidebar */
     z-index: 500; /* Lower than header but above other content */
@@ -179,16 +179,21 @@ footer {
 }
 */
 
-.center {
-  display: block;
-  margin-left: 15%;
-  margin-right: auto;
-  width: 50%;
+.logo {
+    max-width: 100%; /* Limits the logo to not exceed the container width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes bottom margin/padding typical of inline-block elements */
+	margin-left: 15%;
+	margin-right: auto;
+	width: 50%;
 }
+
+
 
 .container {
     display: flex;
-    
+    flex-direction: row; 
+    width: 100%; 
 }
 
 .sidebar {

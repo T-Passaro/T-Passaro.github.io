@@ -1,0 +1,114 @@
+@media (max-width: 1000px) {
+    .contact-info {
+        display: none;
+    }
+
+    .main-content {
+        flex-grow: 1; /* Ensures it grows to take available space */
+       
+        margin-right: 0; /* Removes any margin that might be pushing it */
+		 max-width: 100%; 
+    }
+	.main-content-header {
+        flex-grow: 1; /* Ensures it grows to take available space */
+        
+        margin-right: 0; /* Removes any margin that might be pushing it */
+		 max-width: 100%; 
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row; /* Ensures it is laid out in a row */
+        align-items: stretch; /* Stretches children to fill the container */
+    }
+}
+@media (max-width: 1200px) {
+    .logo {
+        width: 120px; /* Adjusts width on smaller screens */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
+@media (max-width: 600px) {
+    .sidebar {
+        position: static; /* Remove fixed positioning */
+        width: 50%; /* Half the container width */
+        display: inline-block; /* Allows side-by-side arrangement */
+        vertical-align: top; /* Aligns with logo */
+        height: auto;  
+        overflow-y: visible;  
+    }
+	.sidebar ul {
+        height: auto;  
+        max-height: 100vh;  
+		position: static; 
+    }
+    .logo {
+        width: 50%; /* Adjust logo size to take half the space */
+        display: inline-block; /* Aligns next to the nav */
+        vertical-align: top; /* Ensures it aligns with nav */
+        margin: 0; /* Adjust margin for alignment */
+    }
+
+    .header,
+    .main-content {
+        width: 100%;  
+        margin-top: 10px;  
+    }
+	.header {
+    width: 100%;
+    display: block;
+    text-align: center;
+	}
+
+
+	body {
+    margin: 0;  
+    padding: 0; 
+    background-color: #9745E4; 
+	}
+	
+	.header,
+    .main-content-header {
+        width: 100%;  
+        margin: 0;    
+        
+		max-width: 100%; 
+    }
+
+
+    .container {
+        display: block; 
+    }
+
+  
+
+    .main-content {
+        width: 100%;  
+        clear: both;  
+        padding-top: 20px;  
+    }
+	
+	.dropdown-content {
+        display: block;  /* Ensures the dropdown content is always visible */
+        position: static;  /* Normal flow, no absolute positioning */
+        width: 100%;  /* Full width of the sidebar */
+        padding: 0;  /* Adjust padding as needed */
+        background-color: #474787; /* Consistent with your design */
+    }
+
+    .dropdown.active-nav .dropdown-content {
+        display: block;  /* Keeps dropdown open if it is active */
+    }
+
+    .dropdown a {
+        color: #fff;  /* Ensures text is visible */
+        padding: 10px;  /* More touch-friendly padding */
+        display: block;  /* Full-width clickable area */
+        text-align: left;  /* Aligns text to the left */
+    }
+
+    .dropdown a:hover {
+        background-color: #5E5EA0; /* Slightly lighter purple for hover */
+    }
+}
+
