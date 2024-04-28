@@ -51,11 +51,11 @@
 
     .header,
     .main-content {
-        width: 100%;  
+       
         margin-top: 10px;  
     }
 	.header {
-    width: 100%;
+    
     display: block;
     text-align: center;
 	}
@@ -69,7 +69,7 @@
 	
 	.header,
     .main-content-header {
-        width: 100%;  
+        
         margin: 0;    
         
 		max-width: 100%; 
@@ -83,7 +83,7 @@
   
 
     .main-content {
-        width: 100%;  
+        border:0;
         clear: both;  
         padding-top: 20px;  
     }
